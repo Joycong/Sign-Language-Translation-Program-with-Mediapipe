@@ -1,0 +1,26 @@
+# Python 관련 캐시
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Jupyter Notebook 자동 생성 폴더
+.ipynb_checkpoints/
+
+# 가상환경 폴더 (필요시 직접 지정)
+venv/
+env/
+.denv/
+.dvc/
+
+# 운영체제 생성 파일
+.DS_Store
+Thumbs.db
+
+# 모델 및 데이터 중간파일 (여기서는 제외하지 않음)
+# *.pkl
+# *.p
+
+# 기타
+*.log
+*.swp
+models/model.p

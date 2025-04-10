@@ -1,0 +1,7 @@
+mediapipe==0.10.11
+opencv-python==4.9.0.80
+numpy
+scikit-learn==1.5.2
+matplotlib
+pandas
+jamo==0.4.1
