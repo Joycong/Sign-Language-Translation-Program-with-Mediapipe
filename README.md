@@ -22,13 +22,17 @@
 
 ```bash
 pip install -r requirements.txt
+```
 
+2. 사용자 인터페이스 실행
+```bash
 notebooks/inference_classifier.ipynb 파일을 실행하여 사용자 인터페이스 사용
+```
 
-논문
+## 논문
+
 해당 프로젝트는 2024년 한밭대학교 캡스톤 디자인 프로젝트로 수행되었습니다.
 자세한 내용은 docs/Sign Language Translation Program with Mediapipe.pdf를 참고하세요.
-```
 
 ## 모델 다운로드
 
