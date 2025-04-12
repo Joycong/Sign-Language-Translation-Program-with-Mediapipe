@@ -94,20 +94,38 @@ sign-language-translator/
 
 ## ✅ 실행 방법
 
-### ① 준비된 모델 사용 (간편 실행)
+본 프로젝트는 Python 3.11, CUDA Toolkit 10.2, PyTorch 1.10.1 환경에서 개발되었습니다.  
+실행 전 아래 절차에 따라 환경을 구성해주세요.
 
-1. 의존성 설치:
+---
 
+### 공통 단계
+
+1. **PyTorch 설치 (CUDA 10.2)**
+
+   ```bash
+   pip install torch==1.10.1+cu102 torchvision==0.11.2+cu102 torchaudio==0.10.1 \
+       -f https://download.pytorch.org/whl/torch_stable.html
+   ```
+
+2. 기타 의존성 설치
+   
    ```bash
    pip install -r requirements.txt
    ```
 
-2. 모델 파일 다운로드:
+필요에 따라 ① or ② 과정을 진행해주세요.
+
+---
+
+### ① 준비된 모델 사용 (간편 실행)
+
+1. 학습된 모델 다운로드:
 
    👉 [📦 Releases에서 model.p 다운로드](https://github.com/Joycong/Sign-Language-Translation-Program-with-Mediapipe/releases)
 
-3. `models/` 폴더에 `model.p` 파일을 넣고  
-   `inference_classifier.ipynb` 를 실행하면 됩니다.
+2. `models/` 폴더에 `model.p` 파일을 넣고  
+   `notebooks/inference_classifier.ipynb` 를 실행합니다.
 
 > ✅ 이 방법은 바로 인터페이스를 실행할 수 있는 간편 모드입니다.
 
