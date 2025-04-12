@@ -73,14 +73,15 @@ sign-language-translator/
 │   └── data.pickle
 │
 ├── docs/                  # 논문, 이미지, GIF 등 설명 자료
-│   ├── 실행 결과 예시1.gif
-│   ├── 실행 결과 예시2.gif
-│   ├── MediaPipe Hands.png
+│   ├── 실행_결과_예시1.gif
+│   ├── 실행_결과_예시2.gif
+│   ├── MediaPipe_Hands.png
 │   ├── 지문자.png
 │   ├── 연속동작.png
 │   ├── 유한상태머신_지문자.PNG
-│   ├── 묻다, 질문 출력.png
-│   ├── 연속동작 출력 방식.png
+│   ├── 묻다_질문_출력.png
+│   ├── 벡터_및_각도_계산.jpg
+│   ├── 연속동작_출력_방식.png
 │   └── Sign Language Translation Program with Mediapipe.pdf
 │
 ├── requirements.txt       # 필요 패키지 목록
