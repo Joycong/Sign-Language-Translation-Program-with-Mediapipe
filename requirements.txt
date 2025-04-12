@@ -1,3 +1,4 @@
+# 수어 번역기 주요 라이브러리
 mediapipe==0.10.11
 opencv-python==4.9.0.80
 numpy
@@ -5,3 +6,6 @@ scikit-learn==1.5.2
 matplotlib
 pandas
 jamo==0.4.1
+
+# 인터페이스 실행용
+jupyter
