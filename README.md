@@ -66,7 +66,8 @@ sign-language-translator/
 ├── notebooks/             # Jupyter 노트북 (데이터 수집/학습/실행)
 │   ├── create_dataset.ipynb
 │   ├── train_classifier.ipynb
-│   └── inference_classifier.ipynb
+│   ├── inference_classifier.ipynb
+│   └── unicode.py
 │
 ├── models/                # 학습된 모델 파일 (.p)
 │   └── model.p
@@ -90,33 +91,39 @@ sign-language-translator/
 └── README.md
 ```
 
----
-
-## ✅ 실행 방법
-
-본 프로젝트는 Python 3.11, CUDA Toolkit 10.2, PyTorch 1.10.1 환경에서 개발되었습니다.  
-실행 전 아래 절차에 따라 환경을 구성해주세요.
+> ▪ 참고:
+unicode.py 파일은 한글 초성/중성/종성 분리 및 조합 기능을 위해 사용된 외부 참고 스크립트입니다.
+(해당 파일은 notebooks/ 폴더에도 복사되어 있어야 정상적으로 import 됩니다.)
 
 ---
 
-### 공통 단계
+## ✅ 개발 환경
 
-1. **PyTorch 설치 (CUDA 10.2)**
+- Python 3.11 이상
+- PyTorch 2.x 권장 (※ PyTorch 1.10.1은 Python 3.9 이하에서만 설치 가능)
 
+---
+
+### 📥 설치 방법
+
+1. 가상환경 생성 (선택)
    ```bash
-   pip install torch==1.10.1+cu102 torchvision==0.11.2+cu102 torchaudio==0.10.1 \
-       -f https://download.pytorch.org/whl/torch_stable.html
+   conda create -n signlang_env python=3.11
+   conda activate signlang_env
    ```
 
-2. 기타 의존성 설치
-   
+2. PyTorch 설치
+   ```bash
+   pip install torch torchvision torchaudio
+   ```
+
+3. 기타 의존성 설치
    ```bash
    pip install -r requirements.txt
    ```
+---
 
 필요에 따라 ① or ② 과정을 진행해주세요.
-
----
 
 ### ① 준비된 모델 사용 (간편 실행)
 
@@ -126,6 +133,8 @@ sign-language-translator/
 
 2. `models/` 폴더에 `model.p` 파일을 넣고  
    `notebooks/inference_classifier.ipynb` 를 실행합니다.
+
+>  models/ 폴더가 없다면 수동으로 만들어주세요.
 
 > ✅ 이 방법은 바로 인터페이스를 실행할 수 있는 간편 모드입니다.
 
